@@ -3,11 +3,18 @@
 if [[ $1 == '-h' ]]; then
     echo Help: $0 fontsize tintcolor fadepercent fadecolor cursorcolor extrashit
 else
-#TP="xft:TopazPlus a600a1200a4000-$1"
-    TP="xft:TopazPlus a600a1200a4000-$1:antialias=false"
-    PN="xft:P0T\-NOoDLE-$1"
-    MS="xft:mOsOul-$1"
-    MK="xft:Microknight-$1"
+
+if [[ $1 == '-1' ]]; then
+  SIZE=''
+else
+  SIZE=$1
+fi
+
+#TP="xft:TopazPlus a600a1200a4000-$SIZE"
+    TP="xft:TopazPlus a600a1200a4000-$SIZE:antialias=false"
+    PN="xft:P0T\-NOoDLE-$SIZE"
+    MS="xft:mOsOul-$SIZE"
+    MK="xft:Microknight-$SIZE"
     TINTCOLOR=$2
     FADEPERCENT=$3
     FADECOLOR=$4
