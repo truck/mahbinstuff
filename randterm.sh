@@ -13,4 +13,4 @@ DASHP=$(( $DASHP + 10 ))
 
 #DAFADE=$(( $DAFADE + 50 ))
 #Help: /home/andrew/bin//amigaterm2.sh fontsize tintcolor fadepercent fadecolor cursorcolor extrashit
-amigaterm2.sh -1 "$DACOL" "$DAFADE" "$DAFCOL" green -sh "$DASHP" "$@"
+~/bin/amigaterm2.sh 12 "$DACOL" "$DAFADE" "$DAFCOL" green -sh "$DASHP" "$@"
