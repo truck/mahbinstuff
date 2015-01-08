@@ -4,12 +4,13 @@ Stuff I use, which I continue to update
  * or have to copy from the work box
  * or all sorts of similar loss of time/debugging.
 
-DMG's fonts are here also ( http://www.trueschool.se )
+DMG's fonts are here also ( http://www.trueschool.se ) - Powerline versions are just patched versions of these.
 
-my "randterm" and "amigaterm2" term scripts (urxvt) +
-a few other term launches (awesome menu/keylaunch)
+my "randterm" and "amigaterm2" term scripts (urxvt) + a few other term launches (awesome menu/keylaunch)
 
-zshrc bits...
+zshrc bits... now with zgen! \o/
+
+- this generally gets put in ~/bin/ - some bits (like zshrc) needs to be moved to ~ . Fonts to .fonts obviously.
 
 and as I add stuff I may comment...
 
