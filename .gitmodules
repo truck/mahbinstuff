@@ -1,3 +1,6 @@
 [submodule "zgen"]
 	path = zgen
 	url = https://github.com/tarjoilija/zgen
+[submodule "tmuxcompose"]
+	path = tmuxcompose
+	url = https://github.com/truck/tmuxcompose
