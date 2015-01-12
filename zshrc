@@ -1,5 +1,5 @@
 echo "Loading zgen..."
-source bin/zgen/zgen.zsh
+source ~/bin/zgen/zgen.zsh
 
 source ~/bin/fixcolors
 HIST_STAMPS="yyyy-mm-dd"
