@@ -1,9 +1,10 @@
-#!/bin/bash
+#!/bin/zsh
 # this may not work any longer with the way that arch has
 # redone the fc-list bit, if that's the case and you feel
 # like fixing it, fix it...
 
 PICK=`fc-list | sort |dmenu -i -l 25 -fn mOsOul -p Font`
+SIZE=`echo 10,12,14,16,9,8,72 | sed s/,/\\\n/g | dmenu -p Size -fn mOsOul-16 -sb orange -sf navy`
 if [ "$PICK" ]; then
  FONT=`echo $PICK | cut -d: -f2 | sed -e "s/^ /xft:/"`
 
@@ -24,9 +25,6 @@ if [ "$PICK" ]; then
 # echo \
  urxvtc -bc -rv -tr -sb +sr -g 80x42 -tint "$DACOL" -fade "$DAFADE" \
  -fadecolor "$FADECOLOR" -tn xterm-256color -cr green -sh "$DASHADE" \
- -fn "$FONT"
+ -fn "$FONT-$SIZE"
 fi
-
-
-
 

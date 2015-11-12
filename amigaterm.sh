@@ -1,2 +1,2 @@
-#!/bin/sh
-~/bin/amigaterm2.sh 12 navy 80 orange green $@
+#!/bin/zsh
+~/bin/amigaterm2.sh 10 navy 80 orange green $@

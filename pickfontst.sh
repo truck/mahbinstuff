@@ -1,12 +1,11 @@
-#!/bin/bash
-# this may not work any longer with the way that arch has
-# redone the fc-list bit, if that's the case and you feel
-# like fixing it, fix it...
+#!/bin/zsh
+# now uses a list I have made of available fonts that work well
 
-PICK=`fc-list | sort |dmenu -i -l 25 -fn mOsOul -p Font`
-if [ "$PICK" ]; then
- FONT=`echo $PICK | cut -d: -f2`
- echo st -f \"$FONT:pixelsize=16:antialias=false:autohint=false\"
- st -f "$FONT:pixelsize=16:antialias=false:autohint=false"
+PICK=`cat ~/bin/shellfonts.list |dmenu -i -l 25 -fn "ProggySquareTTSZ" -p "ST: Pick Font"`
+SIZE=`echo 16,12,14,10,9,8,72 | sed s/,/\\\n/g | dmenu -p Size -fn mOsOul-16 -sb orange -sf navy`
+if [[ $PICK ]]; then
+ FONT=$PICK:pixelsize="$SIZE":antialias=false:autohint=false
+ echo st -f $FONT
+ st -f $FONT
 fi
 

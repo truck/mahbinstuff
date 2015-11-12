@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 COLORS=("dodgerblue" "chartreuse" "aliceblue" "forestgreen" "burlywood" "dark goldenrod" "indian red" "firebrick" "Gainsboro" "Misty Rose" "Peach Puff" "Seashell" "Slate Gray" "Tan" "Tomato")
 DACOLN=$(( $RANDOM % ${#COLORS} ))
 DACOL=${COLORS[$DACOLN]}
@@ -13,4 +13,4 @@ DASHP=$(( $DASHP + 10 ))
 
 #DAFADE=$(( $DAFADE + 50 ))
 #Help: /home/andrew/bin//amigaterm2.sh fontsize tintcolor fadepercent fadecolor cursorcolor extrashit
-~/bin/amigaterm2.sh 12 "$DACOL" "$DAFADE" "$DAFCOL" green -sh "$DASHP" "$@"
+~/bin/amigaterm2.sh 12 "$DACOL" "$DAFADE" "$DAFCOL" green -sh "$DASHP"  -pe selection-to-clipboard "$@"

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 # help shit
 if [[ $1 == '-h' ]]; then
     echo Help: $0 fontsize tintcolor fadepercent fadecolor cursorcolor extrashit

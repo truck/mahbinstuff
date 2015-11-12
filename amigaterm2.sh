@@ -1,10 +1,10 @@
-#!/bin/bash
+#!/bin/zsh
 # help shit
 if [[ $1 == '-h' ]]; then
     echo Help: $0 fontsize tintcolor fadepercent fadecolor cursorcolor extrashit
 else
-#TP="xft:TopazPlus a600a1200a4000-$1"
-    TP="xft:TopazPlus a600a1200a4000 for Powerline-$1:antialias=false"
+#TP="TopazPlus a600a1200a4000 for Powerline-$1"
+    TP="xft:TopazPlus a600a1200a4000 for Powerline-$1:antialias=false,xft:Symbola-$1:antialias=false"
     PN="xft:P0T\-NOoDLE for Powerline-$1"
     MS="xft:mOsOul for Powerline-$1"
     MK="xft:MicroKnightPlus for Powerline-$1"
