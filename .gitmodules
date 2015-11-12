@@ -4,3 +4,6 @@
 [submodule "tmuxcompose"]
 	path = tmuxcompose
 	url = https://github.com/truck/tmuxcompose
+[submodule "fonts/codeface"]
+	path = fonts/codeface
+	url = https://github.com/chrissimpkins/codeface
